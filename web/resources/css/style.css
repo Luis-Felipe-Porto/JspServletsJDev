@@ -1,0 +1,236 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/06/2020, 15:46:45
+    Author     : NATANIELE
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.middle{
+    outline: 1px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.middle .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #100e70;
+    color: #fff;
+}
+
+.middle .container{
+    height: 50vh;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background:#dfdfdfd3;
+    font-style: none;
+}
+.middle .container a{
+    margin-top: 30px;
+    text-decoration: none;
+}
+.middle .container .fild-btn input{
+    height: 40px;
+    width: 90px;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    background: #100e70;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+
+}
+.middle .container form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-weight: 600;
+  
+}
+.middle .container form input{
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 18px;
+    border: 0;
+}
+#cadastro-usuario{
+    max-width: 1200px;
+    margin: 20px auto;
+    width: 80%;
+}
+#cadastro-usuario h1{
+    text-align: center;
+    background: #1b1972;
+    color: #fff;
+    border-radius: 5px;
+    max-width: 830px;
+    margin: auto;
+    padding: 15px;
+}
+#cadastro-usuario .waring{
+    text-align: center;
+    font-weight: bold;
+    color: #f60;
+}
+#cadastro-usuario .sucessfull{
+    text-align: center;
+    font-weight: bold;
+    color: #1CA260;
+}
+#cadastro-usuario .formulario{
+    background: #dddddd;
+    max-width: 830px;
+    padding: 30px;
+    border-radius: 8px;
+    margin:  auto;
+}
+.formulario fieldset{
+    border: 0;
+    margin-top: 50px;    
+}
+.formulario legend{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+}
+.formulario .field-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+.formulario .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 250px;
+    font-size: 20px;
+    margin-right: 50px;
+    font-weight: 700;  
+}
+.formulario .field input{
+    border: 0;
+    height: 4vh;
+    font-size: 16px;
+    border-radius: 3px;  
+}
+.formulario .btn-save{
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+}
+.formulario .btn-save input{
+    padding: 5px;
+    font-weight: 700;
+    border: 0;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    background: #100e70;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.result{
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    
+}
+.result td,th{
+    outline: 1px solid #000;
+    height: 30px;
+    padding: 5px;
+}
+.result .comando-table{
+    width: 10%;
+    text-align: center;
+}
+.result .data a{
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+}
+.result .comando-editar a span{
+    background: url('../imagens/icons/edit.svg');
+    width: 20px;
+    height: 20px;
+    background-position: 100%;
+}
+.result .comando-deletar a span{
+    background: url('../imagens/icons/trash.png');
+    width: 30px;
+    height: 30px;
+}
+
+.result .comando-telefone a span{
+    background: url('../imagens/icons/telefone.png');
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:4px;
+    width: 70%;
+    margin: 50px auto;
+}
+.produto li{
+    width: 100px;
+}
+.menu-grid li{
+    background: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+}
+.menu-grid li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+}
+.menu-grid li a>p{
+    margin: 10px;
+}
+.header{
+    max-width: 1240px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    background:#100e70;
+    color: #fff;
+}
+.header h2{
+    background:#100e70;
+    padding: 20px;
+}

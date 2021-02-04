@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<web-app id="JspProjeto" version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>filter</filter-name>
+        <filter-class>filter.FilterAutenticacao</filter-class>
+    </filter>
+    <servlet>
+        <servlet-name>Usuario</servlet-name>
+        <servlet-class>servelets.Usuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProdutoServelt</servlet-name>
+        <servlet-class>servelets.ProdutoServelt</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SalvarTelefone</servlet-name>
+        <servlet-class>servelets.SalvarTelefone</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PesquisaServelt</servlet-name>
+        <servlet-class>servelets.PesquisaServelt</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Usuario</servlet-name>
+        <url-pattern>/salvarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProdutoServelt</servlet-name>
+        <url-pattern>/ProdutoServelt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SalvarTelefone</servlet-name>
+        <url-pattern>/SalvarTelefone</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PesquisaServelt</servlet-name>
+        <url-pattern>/PesquisaServelt</url-pattern>
+    </servlet-mapping>
+</web-app>
